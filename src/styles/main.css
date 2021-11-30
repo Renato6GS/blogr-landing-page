@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: hsl(356, 100%, 66%);
+    --hover-background: hsl(355, 100%, 74%)
+    --headings-color: hsl(208, 49%, 24%);
+
+    --white-text: hsl(0, 0%, 100%);
+    --footer-text-color: hsl(240, 2%, 79%);
+    --body-color: hsl(207, 13%, 34%);
+    --footer-background: hsl(240, 10%, 16%);
+
+    --background-gradient-light-red: hsl(13, 100%, 72%);
+    --background-gradient-red: hsl(353, 100%, 62%);
+
+    --body-gradient-blue: hsl(237, 17%, 21%);
+    --body-gradient-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+body {
+   background-color: var(--white-text);
+   font-size: 16px;
+   font-family: 'Outfit', sans-serif;
+
+   /* font-family: 'Outfit', sans-serif;
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+}

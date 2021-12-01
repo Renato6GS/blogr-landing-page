@@ -1,0 +1,105 @@
+.header {
+   background-color: red;
+   height: 80vh;
+   width: 100%;
+   background: rgb(255, 134, 101);
+   background: linear-gradient(180deg, rgba(255, 134, 101, 1) 0%, rgba(255, 70, 92, 1) 100%);
+   border-bottom-left-radius: 80px;
+   overflow: hidden;
+}
+
+.header .background-img {
+   margin: 0;
+   width: 100%;
+   position: relative;
+   padding-top: 50px;
+}
+
+.header .images,
+.header .titles,
+.header .images {
+   position: absolute;
+   z-index: 1;
+}
+
+.background-img img {
+   width: 326%;
+   position: absolute;
+   left: -310px;
+   top: -250px;
+   z-index: 0;
+}
+
+/* Contenido del header */
+.header .images {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.images .menu-bar {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: center;
+   align-items: center;
+   padding-left: 120px;
+}
+
+.header .titles {
+   height: 70%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+   justify-content: center;
+   align-items: center;
+   padding: 0px 25px;
+}
+
+/* Nos quedamos estilando los estilos de las letras del header */
+.titles .title {
+   font-family: 'Overpass', sans-serif;
+   color: var(--white-text);
+   font-size: 2.2rem;
+   text-align: center;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.titles .sub-title {
+   font-family: 'Overpass', sans-serif;
+   color: var(--white-text);
+   font-weight: 300;
+   text-align: center;
+   display: inline-block;
+   margin-top: 0;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.buttons button {
+   display: inline-block;
+   padding: 14px 7px 11px 7px;
+   border: 1px solid var(--white-text);
+   border-radius: 30px;
+   background-color: transparent;
+   font-size: 1rem;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 600;
+   width: 40%;
+   margin: 20px 13px 0px 13px;
+}
+
+.buttons .btn-start {
+   color: var(--text-color);
+   background-color: var(--white-text);
+}
+
+.buttons .btn-learn {
+   color: var(--white-text);
+}

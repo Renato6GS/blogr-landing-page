@@ -6,4 +6,5 @@ importAll(require.context('./static/img', false, /\.(png|jpe?g|svg)$/));
 
 // ... or, add files individually
 import './vendors/normalize/normalize.css';
-import './styles/main.scss';
+import './styles/main.css';
+import './styles/header.css';

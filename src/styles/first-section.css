@@ -1,0 +1,46 @@
+.first-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 50px;
+}
+
+.first-section .article-design {
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.first-section .title {
+   font-size: 1.8rem;
+   font-family: 'Overpass', sans-serif;
+   color: var(--body-color);
+   text-align: center;
+   font-weight: 600;
+}
+
+.article-design .container-img {
+   width: 100%;
+   padding-top: 25px;
+}
+
+.container-img img {
+   width: 100%;
+}
+
+.first-section .article-introducing,
+.first-section .article-editor {
+   width: 80%;
+   font-family: 'Overpass', sans-serif;
+   text-align: center;
+}
+
+.article-introducing p,
+.article-editor p {
+   font-size: 1.2rem;
+   line-height: 32px;
+   color: var(--body-color);
+}

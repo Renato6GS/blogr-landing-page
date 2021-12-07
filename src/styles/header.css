@@ -1,105 +1,182 @@
 .header {
-   background-color: red;
-   height: 80vh;
+   background: rgb(255, 134, 100);
+   background: linear-gradient(90deg, rgba(255, 134, 100, 1) 0%, rgba(255, 70, 70, 1) 95%);
+   height: 70vh;
    width: 100%;
-   background: rgb(255, 134, 101);
-   background: linear-gradient(180deg, rgba(255, 134, 101, 1) 0%, rgba(255, 70, 92, 1) 100%);
-   border-bottom-left-radius: 80px;
+   padding: 20px 10%;
    overflow: hidden;
+   border-bottom-left-radius: 120px;
 }
 
 .header .background-img {
-   margin: 0;
-   width: 100%;
    position: relative;
-   padding-top: 50px;
-}
-
-.header .images,
-.header .titles,
-.header .images {
-   position: absolute;
-   z-index: 1;
 }
 
 .background-img img {
-   width: 326%;
+   width: 200%;
+   min-width: 3000px;
    position: absolute;
-   left: -310px;
-   top: -250px;
+   top: -1200px;
+   left: -500px;
    z-index: 0;
 }
 
-/* Contenido del header */
-.header .images {
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+/* It is for cellphones */
+.menu-bars img {
+   display: none;
 }
 
-.images .menu-bar {
+.header .container-header {
+   display: grid;
+   grid-template-columns: 1fr 2fr 5fr;
+   grid-template-rows: 1fr;
+   position: relative;
+}
+
+.logo img {
+   width: 100%;
+   min-width: 50px;
+}
+
+.header-links {
+   background-color: transparent;
    display: flex;
-   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   padding: 0.5rem;
+   gap: 1rem;
+}
+
+.link {
+   background: none;
+   border: none;
+   text-decoration: none;
+   color: #777;
+   font-family: inherit;
+   font-size: inherit;
+   cursor: pointer;
+   padding: 0;
+}
+
+.dropdown button {
+   color: var(--white-text);
+   display: flex;
    justify-content: center;
    align-items: center;
-   padding-left: 120px;
+   gap: 10px;
 }
 
-.header .titles {
-   height: 70%;
+.dropdown.active > .link,
+.link:hover {
+   color: #000;
+}
+
+.dropdown {
+   position: relative;
+}
+
+.dropdown-menu {
+   position: absolute;
+   left: 0;
+   top: calc(100% + 0.25rem);
+   background-color: #fff;
+   padding: 0.75rem;
+   border-radius: 0.25rem;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+   opacity: 0;
+   pointer-events: none; /* Con esto ocultamos las interaciones del mouse al contenido con opacity, sin usar hidden */
+   transform: translateY(-10px);
+   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+   opacity: 1;
+   transform: translateY(0);
+   pointer-events: auto;
+}
+
+.information-grid {
+   display: grid;
+   grid-template-columns: repeat(2, max-content);
+   gap: 2rem;
+}
+
+.dropdown-links {
    display: flex;
    flex-direction: column;
-   margin-top: 10px;
-   justify-content: center;
-   align-items: center;
-   padding: 0px 25px;
+   gap: 0.25rem;
 }
 
-/* Nos quedamos estilando los estilos de las letras del header */
-.titles .title {
-   font-family: 'Overpass', sans-serif;
-   color: var(--white-text);
-   font-size: 2.2rem;
-   text-align: center;
-   font-weight: 600;
-   margin-bottom: 20px;
-}
-
-.titles .sub-title {
-   font-family: 'Overpass', sans-serif;
-   color: var(--white-text);
-   font-weight: 300;
-   text-align: center;
-   display: inline-block;
-   margin-top: 0;
-}
-
-.buttons {
+.container-header .buttons {
+   /* background-color: green; */
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   width: 100%;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 30px;
 }
 
 .buttons button {
-   display: inline-block;
-   padding: 14px 7px 11px 7px;
-   border: 1px solid var(--white-text);
-   border-radius: 30px;
+   border: none;
+   padding: 13px 32px;
+   color: var(--white-text);
    background-color: transparent;
-   font-size: 1rem;
-   font-family: 'Overpass', sans-serif;
+   border-radius: 30px;
    font-weight: 600;
-   width: 40%;
-   margin: 20px 13px 0px 13px;
+   cursor: pointer;
 }
 
+.buttons .btn-sign-up,
 .buttons .btn-start {
+   background-color: #fff;
    color: var(--text-color);
-   background-color: var(--white-text);
+}
+
+.header .titles {
+   /* background-color: green; */
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+}
+
+.titles .title {
+   color: var(--white-text);
+   font-size: 4rem;
+   text-align: center;
+}
+
+.titles .sub-title {
+   color: var(--white-text);
+   font-weight: 300;
+   margin-top: -10px;
+   text-align: center;
+}
+
+.titles > .buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   margin-top: 60px;
 }
 
 .buttons .btn-learn {
-   color: var(--white-text);
+   border: 1px solid var(--white-text);
+}
+
+@media (hover: hover) {
+   .buttons button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+   }
+
+   .buttons .btn-sign-up:hover,
+   .buttons .btn-start:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: var(--white-text);
+   }
+
+   .buttons .btn-learn:hover {
+      background-color: var(--white-text);
+      color: var(--text-color);
+   }
 }

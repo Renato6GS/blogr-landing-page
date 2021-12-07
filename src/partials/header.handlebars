@@ -1,16 +1,79 @@
 <header class='header'>
-
-   <figure class='background-img'>
+   <div class='background-img'>
       <img src='./static/img/bg-pattern-intro-mobile.svg' class='header-img' alt='Background' />
-      <div class='background-fade'></div>
-   </figure>
+   </div>
 
-   <div class='images'>
+   <div class='container-header'>
       <figure class='logo'>
-         <img src='./static/img/logo.svg' alt='Blogr' />
+         <img src='./static/img/logo.svg' alt='Blogr' class='header-logo' />
       </figure>
-      <figure class='menu-bar'>
-         <img src='./static/img/icon-hamburger.svg' alt='Menu' />
+
+      <nav class='header-links'>
+         <div class='dropdown' data-dropdown>
+            <button class='link' data-dropdown-button>
+               Product
+               <img src='./static/img/icon-arrow-light.svg' alt='Arrow-drop' class='icon-arrow' />
+            </button>
+            <div class='dropdown-menu information-grid'>
+               <div>
+                  <div class='dropdown-heading'>Create</div>
+                  <div class='dropdown-links'>
+                     <a href='#' class='link'>Blog</a>
+                     <a href='#' class='link'>Portfolio</a>
+                     <a href='#' class='link'>Website</a>
+                  </div>
+               </div>
+               <div>
+                  <div class='dropdown-heading'>Update</div>
+                  <div class='dropdown-links'>
+                     <a href='#' class='link'>Curso</a>
+                     <a href='#' class='link'>Cellphone</a>
+                     <a href='#' class='link'>Connecting</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class='dropdown' data-dropdown>
+            <button class='link' data-dropdown-button>
+               Company
+               <img src='./static/img/icon-arrow-light.svg' alt='Arrow-drop' class='icon-arrow' />
+            </button>
+            <div class='dropdown-menu information-grid'>
+               <div>
+                  <div class='dropdown-links'>
+                     <a href='#' class='link'>About us</a>
+                     <a href='#' class='link'>Works</a>
+                     <a href='#' class='link'>Our sponsors</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class='dropdown' data-dropdown>
+            <button class='link' data-dropdown-button>
+               Connect
+               <img src='./static/img/icon-arrow-light.svg' alt='Arrow-drop' class='icon-arrow' />
+            </button>
+            <div class='dropdown-menu information-grid'>
+               <div>
+                  <div class='dropdown-links'>
+                     <a href='#' class='link'>Contact</a>
+                     <a href='#' class='link'>Newsletter</a>
+                     <a href='#' class='link'>LinkedIn</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <div class='buttons'>
+         <button>Login</button>
+         <button class='btn-sign-up'>Sign Up</button>
+      </div>
+
+      <figure class='menu-bars'>
+         <img src='./static/img/icon-hamburger.svg' alt='Menu' class='header-menu' />
       </figure>
    </div>
 

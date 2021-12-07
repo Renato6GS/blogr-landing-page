@@ -10,3 +10,4 @@ import './styles/main.css';
 import './styles/header.css';
 import './styles/first-section.css';
 import './styles/second-section.css';
+import './styles/third-section.css';

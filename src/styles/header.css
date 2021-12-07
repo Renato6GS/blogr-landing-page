@@ -1,0 +1,182 @@
+.header {
+   background: rgb(255, 134, 100);
+   background: linear-gradient(90deg, rgba(255, 134, 100, 1) 0%, rgba(255, 70, 70, 1) 95%);
+   height: 70vh;
+   width: 100%;
+   padding: 20px 10%;
+   overflow: hidden;
+   border-bottom-left-radius: 120px;
+}
+
+.header .background-img {
+   position: relative;
+}
+
+.background-img img {
+   width: 200%;
+   min-width: 3000px;
+   position: absolute;
+   top: -1200px;
+   left: -500px;
+   z-index: 0;
+}
+
+/* It is for cellphones */
+.menu-bars img {
+   display: none;
+}
+
+.header .container-header {
+   display: grid;
+   grid-template-columns: 1fr 2fr 5fr;
+   grid-template-rows: 1fr;
+   position: relative;
+}
+
+.logo img {
+   width: 100%;
+   min-width: 50px;
+}
+
+.header-links {
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.5rem;
+   gap: 1rem;
+}
+
+.link {
+   background: none;
+   border: none;
+   text-decoration: none;
+   color: #777;
+   font-family: inherit;
+   font-size: inherit;
+   cursor: pointer;
+   padding: 0;
+}
+
+.dropdown button {
+   color: var(--white-text);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.dropdown.active > .link,
+.link:hover {
+   color: #000;
+}
+
+.dropdown {
+   position: relative;
+}
+
+.dropdown-menu {
+   position: absolute;
+   left: 0;
+   top: calc(100% + 0.25rem);
+   background-color: #fff;
+   padding: 0.75rem;
+   border-radius: 0.25rem;
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+   opacity: 0;
+   pointer-events: none; /* Con esto ocultamos las interaciones del mouse al contenido con opacity, sin usar hidden */
+   transform: translateY(-10px);
+   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+   opacity: 1;
+   transform: translateY(0);
+   pointer-events: auto;
+}
+
+.information-grid {
+   display: grid;
+   grid-template-columns: repeat(2, max-content);
+   gap: 2rem;
+}
+
+.dropdown-links {
+   display: flex;
+   flex-direction: column;
+   gap: 0.25rem;
+}
+
+.container-header .buttons {
+   /* background-color: green; */
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 30px;
+}
+
+.buttons button {
+   border: none;
+   padding: 13px 32px;
+   color: var(--white-text);
+   background-color: transparent;
+   border-radius: 30px;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.buttons .btn-sign-up,
+.buttons .btn-start {
+   background-color: #fff;
+   color: var(--text-color);
+}
+
+.header .titles {
+   /* background-color: green; */
+   height: 80%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+}
+
+.titles .title {
+   color: var(--white-text);
+   font-size: 4rem;
+   text-align: center;
+}
+
+.titles .sub-title {
+   color: var(--white-text);
+   font-weight: 300;
+   margin-top: -10px;
+   text-align: center;
+}
+
+.titles > .buttons {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   margin-top: 60px;
+}
+
+.buttons .btn-learn {
+   border: 1px solid var(--white-text);
+}
+
+@media (hover: hover) {
+   .buttons button:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+   }
+
+   .buttons .btn-sign-up:hover,
+   .buttons .btn-start:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: var(--white-text);
+   }
+
+   .buttons .btn-learn:hover {
+      background-color: var(--white-text);
+      color: var(--text-color);
+   }
+}

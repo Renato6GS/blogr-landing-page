@@ -23,8 +23,13 @@ body {
    background-color: var(--white-text);
    font-size: 16px;
    font-family: 'Outfit', sans-serif;
+   margin: 0;
 
    /* font-family: 'Outfit', sans-serif;
 font-family: 'Overpass', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 }
+
+/* img {
+    width: 10%;
+ } */

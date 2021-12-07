@@ -1,0 +1,37 @@
+.third-section {
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.third-section .header-computer {
+   width: 100%;
+}
+
+.header-computer img {
+   width: 100%;
+}
+
+.third-section article {
+   width: 90%;
+}
+
+.first-article .title,
+.second-article .title {
+   font-size: 1.8rem;
+   font-family: 'Overpass', sans-serif;
+   color: var(--body-color);
+   text-align: center;
+   font-weight: 600;
+}
+
+.first-article .content,
+.second-article .content {
+   font-size: 1.2rem;
+   line-height: 32px;
+   color: var(--body-color);
+   text-align: center;
+   font-weight: 300;
+}

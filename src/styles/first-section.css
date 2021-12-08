@@ -1,46 +1,70 @@
 .first-section {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   margin-top: 50px;
+   display: grid;
+   grid-template-areas:
+      'title title'
+      'first-content image'
+      'second-content image';
+   margin-top: 200px;
+   margin-bottom: 200px;
+   padding: 0 0 0 10%;
 }
 
-.first-section .article-design {
-   display: flex;
-   justify-items: center;
-   align-items: center;
-   flex-direction: column;
+.container-first-section {
+   overflow: hidden;
+   height: 1200px;
+}
+
+.responsive {
+   display: none;
+}
+
+.first-section > .title {
+   grid-area: title;
+   text-align: center;
 }
 
 .first-section .title {
-   font-size: 1.8rem;
-   font-family: 'Overpass', sans-serif;
-   color: var(--body-color);
-   text-align: center;
    font-weight: 600;
+   color: var(--body-gradient-desaturated-blue);
+   font-size: 2rem;
+   padding-right: 10%;
+}
+
+.first-section .article-design {
+   grid-area: image;
+   width: 100%;
+   height: 200%;
 }
 
 .article-design .container-img {
-   width: 100%;
-   padding-top: 25px;
+   background-color: red;
+   width: 700px;
+   position: relative;
 }
 
 .container-img img {
-   width: 100%;
+   width: 140%;
+   position: absolute;
+   top: -200px;
+   left: -20px;
+}
+
+.first-section .article-introducing {
+   grid-area: first-content;
+   margin-top: 60px;
+}
+
+.first-section .article-editor {
+   grid-area: second-content;
 }
 
 .first-section .article-introducing,
 .first-section .article-editor {
    width: 80%;
-   font-family: 'Overpass', sans-serif;
-   text-align: center;
 }
 
-.article-introducing p,
-.article-editor p {
-   font-size: 1.2rem;
-   line-height: 32px;
+.first-section > article > p {
    color: var(--body-color);
+   line-height: 32px;
+   font-size: 1.1rem;
 }

@@ -9,6 +9,7 @@ import './vendors/normalize/normalize.css';
 import './styles/main.css';
 import './styles/header.css';
 import './styles/first-section.css';
+import './styles/second-section.css';
 
 document.addEventListener('click', (e) => {
    const isDropdownButton = e.target.matches('[data-dropdown-button]');

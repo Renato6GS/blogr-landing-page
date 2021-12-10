@@ -3,15 +3,10 @@
    grid-template-areas:
       'title title'
       'first-content image'
-      'second-content image';
-   margin-top: 200px;
+      'first-content image';
+   margin-top: 100px;
    margin-bottom: 200px;
    padding: 0 0 0 10%;
-}
-
-.container-first-section {
-   overflow: hidden;
-   height: 1200px;
 }
 
 .responsive {
@@ -33,38 +28,36 @@
 .first-section .article-design {
    grid-area: image;
    width: 100%;
-   height: 200%;
+   overflow: hidden;
+   display: grid;
 }
 
 .article-design .container-img {
-   background-color: red;
-   width: 700px;
-   position: relative;
+   width: 130%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .container-img img {
-   width: 140%;
-   position: absolute;
-   top: -200px;
-   left: -20px;
+   width: 130%;
 }
 
 .first-section .article-introducing {
    grid-area: first-content;
-   margin-top: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 100px;
 }
 
-.first-section .article-editor {
-   grid-area: second-content;
-}
-
-.first-section .article-introducing,
-.first-section .article-editor {
+.first-section .article-introducing {
    width: 80%;
 }
 
-.first-section > article > p {
+.first-section .first-article,
+.first-section .second-article {
    color: var(--body-color);
-   line-height: 32px;
+   line-height: 38px;
    font-size: 1.1rem;
 }

@@ -11,6 +11,7 @@ import './styles/header.css';
 import './styles/first-section.css';
 import './styles/second-section.css';
 import './styles/third-section.css';
+import './styles/footer.css';
 
 document.addEventListener('click', (e) => {
    const isDropdownButton = e.target.matches('[data-dropdown-button]');

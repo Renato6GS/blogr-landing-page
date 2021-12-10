@@ -1,37 +1,37 @@
 .third-section {
-   margin-top: 50px;
+   margin-top: 200px;
    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   flex-direction: row;
 }
 
 .third-section .header-computer {
-   width: 100%;
+   width: 45%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .header-computer img {
    width: 100%;
 }
 
-.third-section article {
-   width: 90%;
+.third-section .articles {
+   width: 35%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
-.first-article .title,
-.second-article .title {
-   font-size: 1.8rem;
-   font-family: 'Overpass', sans-serif;
-   color: var(--body-color);
-   text-align: center;
+.articles .title {
    font-weight: 600;
+   color: var(--body-gradient-desaturated-blue);
+   font-size: 2rem;
+   padding-right: 10%;
 }
 
-.first-article .content,
-.second-article .content {
-   font-size: 1.2rem;
-   line-height: 32px;
+.articles .text {
    color: var(--body-color);
-   text-align: center;
-   font-weight: 300;
+   line-height: 38px;
+   font-size: 1.1rem;
 }

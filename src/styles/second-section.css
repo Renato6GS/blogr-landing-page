@@ -1,7 +1,7 @@
 .second-section {
    background-color: var(--body-gradient-blue);
    background-image: url('../static/img/bg-pattern-circles.svg');
-   background-position: -25% 80%;
+   background-position: -24% 90%;
    background-repeat: no-repeat;
    width: 100%;
    border-top-right-radius: 120px;

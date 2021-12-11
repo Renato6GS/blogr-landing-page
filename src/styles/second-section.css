@@ -46,3 +46,23 @@
    line-height: 32px;
    font-size: 1.1rem;
 }
+
+@media screen and (max-width: 1240px) {
+   .second-section {
+      background-position: -80% 90%;
+   }
+
+   .cellphones img {
+      transform: scale(1.8, 1.8);
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .second-section {
+      background-position: -200px 90%;
+   }
+
+   .cellphones img {
+      transform: scale(2, 2);
+   }
+}

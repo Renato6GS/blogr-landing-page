@@ -1,13 +1,10 @@
 <div class='container-first-section'>
 
    <section class='first-section'>
-      <h3 class='title'>Designed for the future</h3>
-      <article class='article-design'>
-         <div class='container-img'>
-            <img class='responsive' src='./static/img/illustration-editor-mobile.svg' alt='editor-mobile' />
-            <img class='desktop' src='./static/img/illustration-editor-desktop.svg' alt='editor-mobile' />
-         </div>
-      </article>
+      <div>
+         <h3 class='title'>Designed for the future</h3>
+      </div>
+      {{! <h3 class='title'>Designed for the future</h3> }}
 
       <article class='article-introducing'>
          <div class='first-article'>
@@ -27,6 +24,13 @@
                control.
             </p>
          </div>
+      </article>
+
+      <article class='article-design'>
+         {{! <div class='container-img'> }}
+         {{! <img class='responsive' src='./static/img/illustration-editor-mobile.svg' alt='editor-mobile' /> }}
+         <img class='desktop' src='./static/img/illustration-editor-desktop.png' alt='editor-mobile' />
+         {{! </div> }}
       </article>
    </section>
 

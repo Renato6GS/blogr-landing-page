@@ -1,5 +1,5 @@
 .third-section {
-   margin-top: 200px;
+   margin-top: 100px;
    display: flex;
    flex-direction: row;
 }
@@ -32,6 +32,7 @@
 
 .articles .text {
    color: var(--body-color);
+   font-family: 'Overpass', sans-serif;
    line-height: 38px;
    font-size: 1.1rem;
 }

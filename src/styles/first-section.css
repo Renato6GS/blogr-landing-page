@@ -1,4 +1,64 @@
 .first-section {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 100px 0 100px 10%;
+}
+
+.first-section > div {
+   width: 100%;
+   margin-right: 10%;
+   position: relative;
+}
+
+.first-section > div > .title {
+   width: 100%;
+   /* width: 100%; */
+   text-align: center;
+   /* margin-right: 10%; */
+   font-family: 'Overpass', sans-serif;
+   font-size: 3rem;
+   color: var(--color-text-title);
+   position: absolute;
+   /* gap: 3%; */
+}
+
+.first-section .article-design {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.article-design img {
+   width: 100%;
+}
+
+.first-section .article-introducing {
+   width: 43%;
+   margin-right: 7%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.article-introducing .title {
+   font-family: 'Overpass', sans-serif;
+   font-size: 2rem;
+   color: var(--color-text-title);
+}
+
+.first-section .first-article,
+.first-section .second-article {
+   color: var(--body-color);
+   line-height: 38px;
+   font-size: 1.1rem;
+   font-family: 'Overpass', sans-serif;
+}
+
+/* .first-section {
    display: grid;
    grid-template-areas:
       'title title'
@@ -25,22 +85,15 @@
    padding-right: 10%;
 }
 
-.first-section .article-design {
-   grid-area: image;
-   width: 100%;
-   overflow: hidden;
-   display: grid;
-}
-
 .article-design .container-img {
-   width: 130%;
+   width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .container-img img {
-   width: 130%;
+   width: 100%;
 }
 
 .first-section .article-introducing {
@@ -60,4 +113,4 @@
    color: var(--body-color);
    line-height: 38px;
    font-size: 1.1rem;
-}
+} */

@@ -23,7 +23,9 @@
     --body-gradient-blue: hsl(237, 17%, 21%);
     --body-gradient-desaturated-blue: hsl(237, 23%, 32%);
 
-    --color-text-title: #173852
+    --color-text-title: #173852;
+    --background-color-menu-bars: #efeff1;
+    /* --background-color-menu-bars: red; */
 }
 
 body {

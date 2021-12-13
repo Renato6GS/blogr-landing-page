@@ -13,9 +13,18 @@ import './styles/second-section.css';
 import './styles/third-section.css';
 import './styles/footer.css';
 
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+
 document.addEventListener('click', (e) => {
    const isDropdownButton = e.target.matches('[data-dropdown-button]');
-   if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return;
+   const isDropdownButtonP = e.target.matches('[data-dropdown-button-product]');
+
+   if (!isDropdownButtonP) {
+      if (!(window.innerHeight <= 1000)) {
+         if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return;
+      }
+   }
 
    let currentDropdown;
    if (isDropdownButton) {
@@ -23,8 +32,38 @@ document.addEventListener('click', (e) => {
       currentDropdown.classList.toggle('active');
    }
 
+   if (isDropdownButtonP) {
+      currentDropdown = e.target.closest('[data-dropdown-inside]');
+      currentDropdown.classList.toggle('active');
+      currentDropdown.childNodes[0].childNodes[1].classList.toggle('icon-arrow-active');
+
+      document.querySelectorAll('[data-dropdown-inside].active').forEach((dropdown) => {
+         if (dropdown === currentDropdown) return;
+         dropdown.classList.remove('active');
+      });
+
+      return;
+   }
+
    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
       if (dropdown === currentDropdown) return;
       dropdown.classList.remove('active');
    });
+
+   document.querySelectorAll('[data-dropdown-inside].active').forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove('active');
+   });
+
+   if (!isDropdownButton && !menuOpen) return;
+
+   if (!menuOpen) {
+      menuBtn.classList.add('open');
+      menuOpen = true;
+   } else {
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+   }
 });
+
+// Nos quedamos programando la rotación de la flechita

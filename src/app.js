@@ -30,6 +30,11 @@ document.addEventListener('click', (e) => {
    if (isDropdownButton) {
       currentDropdown = e.target.closest('[data-dropdown]');
       currentDropdown.classList.toggle('active');
+      try {
+         currentDropdown.childNodes[0].childNodes[1].classList.toggle('icon-arrow-active');
+      } catch (e) {
+         console.info('Info: We avoid stopping the flow of execution.');
+      }
    }
 
    if (isDropdownButtonP) {

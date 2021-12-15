@@ -32,11 +32,11 @@ Users should be able to:
 
 Desktop
 
-![](./readme_sources/screenshot_desktop.jpg)
+![](./readme_sources/screenshot_desktop.PNG)
 
 Mobile
 
-![](./readme_sources/screenshot_mobile.jpg)
+![](./readme_sources/screenshot_mobile.PNG)
 
 ## My process
 

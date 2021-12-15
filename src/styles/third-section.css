@@ -36,3 +36,41 @@
    line-height: 38px;
    font-size: 1.1rem;
 }
+
+.third-section .laptop-mobile {
+   display: none;
+}
+
+@media screen and (max-width: 900px) {
+   .third-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 5% 0px 5%;
+   }
+
+   .third-section .laptop-desktop {
+      display: none;
+   }
+
+   .third-section .laptop-mobile {
+      display: block;
+   }
+
+   .third-section .header-computer {
+      width: 100%;
+   }
+
+   .third-section .articles {
+      width: 100%;
+      text-align: center;
+   }
+
+   .articles .title {
+      font-size: 1.5rem;
+   }
+
+   .header-computer img {
+      width: 140%;
+   }
+}

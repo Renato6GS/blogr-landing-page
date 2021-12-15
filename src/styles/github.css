@@ -1,0 +1,12 @@
+.link-github {
+   width: 100%;
+   display: flex;
+   flex-direction: row-reverse;
+   background-color: var(--body-gradient-blue);
+   padding: 5% 5% 20px 0;
+}
+
+.link-github img {
+   width: 36px;
+   filter: invert(100%) sepia(9%) saturate(2342%) hue-rotate(94deg) brightness(115%) contrast(114%);
+}

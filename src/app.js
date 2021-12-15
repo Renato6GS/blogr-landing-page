@@ -10,6 +10,7 @@ import './styles/first-section.css';
 import './styles/second-section.css';
 import './styles/third-section.css';
 import './styles/footer.css';
+import './styles/github.css';
 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;

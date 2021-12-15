@@ -39,12 +39,14 @@
    font-weight: 600;
    color: var(--white-text);
    font-size: 3rem;
+   font-family: 'Overpass', sans-serif;
 }
 
 .container-text .text {
    color: var(--text-color-second-section);
    line-height: 32px;
    font-size: 1.1rem;
+   font-family: 'Overpass', sans-serif;
 }
 
 @media screen and (max-width: 1240px) {
@@ -109,6 +111,6 @@
 
    .container-text .text {
       font-weight: 300;
-      font-size: 1rem;
+      font-size: 1.1rem;
    }
 }

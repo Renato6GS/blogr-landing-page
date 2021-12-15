@@ -59,6 +59,11 @@
 
    .third-section .header-computer {
       width: 100%;
+      overflow: hidden;
+   }
+
+   .header-computer img {
+      width: 140%;
    }
 
    .third-section .articles {
@@ -68,9 +73,5 @@
 
    .articles .title {
       font-size: 1.5rem;
-   }
-
-   .header-computer img {
-      width: 140%;
    }
 }
